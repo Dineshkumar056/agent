@@ -1,0 +1,362 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Aarav Sharma",
+      "email": "student@college.edu",
+      "password_hash": "$2a$10$p5P8vqA7EjEl4fe4WzN4PeJBNuOjAjeY6xag7ou1/wlnwThv3pVmG",
+      "role": "student",
+      "college": "BluePeak Institute of Technology",
+      "department": "Computer Science",
+      "register_number": "BT2023001"
+    },
+    {
+      "id": 2,
+      "name": "Priya Nair",
+      "email": "tech@college.edu",
+      "password_hash": "$2a$10$jnyEnNthMOZ2N8bx5cMsV.zjJbfBacXbRWjD29W6NQrmuB4ToLjRu",
+      "role": "tech",
+      "college": "BluePeak Institute of Technology",
+      "department": "Computer Science",
+      "register_number": null
+    },
+    {
+      "id": 3,
+      "name": "Aditi Rao",
+      "email": "appadmin@college.edu",
+      "password_hash": "$2a$10$TQ3kadkgDGlQECWWoyD17eAOWt7O46.2ZkSKdIqZ3IzMlIdhcYAGa",
+      "role": "app-admin",
+      "college": "BluePeak Institute of Technology",
+      "department": "Administration",
+      "register_number": null
+    },
+    {
+      "id": 4,
+      "name": "Mohit Verma",
+      "email": "mgmt@college.edu",
+      "password_hash": "$2a$10$2xj984HgNmxGv0dJLfC27euFPiRihehwYRZKf3OsWtzQxvRXvxBp2",
+      "role": "management",
+      "college": "BluePeak Institute of Technology",
+      "department": "Management",
+      "register_number": null
+    },
+    {
+      "id": 5,
+      "name": "Raghav Kumar",
+      "email": "superadmin@college.edu",
+      "password_hash": "$2a$10$YdEvhmYwsvL90waA1nfB8OyWBsetWrVs/bKFtalgKCXMPqlItml4S",
+      "role": "main-admin",
+      "college": "BluePeak Institute of Technology",
+      "department": "System Administration",
+      "register_number": null
+    }
+  ],
+  "colleges": [
+    {
+      "id": 1,
+      "name": "BluePeak Institute of Technology",
+      "location": "Bengaluru"
+    }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "name": "Computer Science",
+      "college_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Electronics",
+      "college_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Mechanical",
+      "college_id": 1
+    }
+  ],
+  "subjects": [
+    {
+      "id": 1,
+      "code": "CS301",
+      "name": "Algorithms",
+      "department_id": 1,
+      "credits": 4,
+      "difficulty": 4.2
+    },
+    {
+      "id": 2,
+      "code": "CS302",
+      "name": "DBMS",
+      "department_id": 1,
+      "credits": 4,
+      "difficulty": 3.8
+    },
+    {
+      "id": 3,
+      "code": "CS303",
+      "name": "Machine Learning",
+      "department_id": 1,
+      "credits": 4,
+      "difficulty": 4.5
+    },
+    {
+      "id": 4,
+      "code": "EC304",
+      "name": "Signals and Systems",
+      "department_id": 2,
+      "credits": 4,
+      "difficulty": 4.1
+    },
+    {
+      "id": 5,
+      "code": "ME201",
+      "name": "Thermodynamics",
+      "department_id": 3,
+      "credits": 3,
+      "difficulty": 3.7
+    }
+  ],
+  "faculty": [
+    {
+      "id": 1,
+      "name": "Dr. Meera Iyer",
+      "email": "meera@college.edu",
+      "department_id": 1,
+      "designation": "Professor"
+    },
+    {
+      "id": 2,
+      "name": "Mr. Karan Patel",
+      "email": "karan@college.edu",
+      "department_id": 1,
+      "designation": "Assistant Professor"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Sunitha R",
+      "email": "sunitha@college.edu",
+      "department_id": 2,
+      "designation": "Professor"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "register_number": "BT2023001",
+      "college": "BluePeak Institute of Technology",
+      "department": "Computer Science",
+      "course": "B.Tech",
+      "year": 3,
+      "semester": 6,
+      "study_hours_per_day": 3,
+      "attendance": 86,
+      "internal_marks": 80.4
+    }
+  ],
+  "assignments": [
+    {
+      "id": 1,
+      "student_id": 1,
+      "title": "AI Project Review",
+      "subject": "Machine Learning",
+      "due_date": "2026-11-05",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "student_id": 1,
+      "title": "DBMS Lab Record",
+      "subject": "DBMS",
+      "due_date": "2026-11-07",
+      "status": "in-progress",
+      "priority": "medium"
+    },
+    {
+      "id": 3,
+      "student_id": 1,
+      "title": "Seminar Presentation",
+      "subject": "Operating Systems",
+      "due_date": "2026-11-10",
+      "status": "pending",
+      "priority": "high"
+    }
+  ],
+  "exams": [
+    {
+      "id": 1,
+      "student_id": 1,
+      "title": "Internal Test 2",
+      "subject": "Algorithms",
+      "exam_date": "2026-11-16",
+      "type": "internal",
+      "status": "scheduled"
+    },
+    {
+      "id": 2,
+      "student_id": 1,
+      "title": "Semester Practical",
+      "subject": "Java Lab",
+      "exam_date": "2026-11-20",
+      "type": "practical",
+      "status": "scheduled"
+    }
+  ],
+  "timetableEntries": [
+    {
+      "id": 1,
+      "student_id": 1,
+      "day": "Monday",
+      "start_time": "09:00",
+      "end_time": "10:00",
+      "subject": "Algorithms",
+      "room": "A-101",
+      "type": "class"
+    },
+    {
+      "id": 2,
+      "student_id": 1,
+      "day": "Monday",
+      "start_time": "10:15",
+      "end_time": "11:15",
+      "subject": "DBMS",
+      "room": "B-220",
+      "type": "lab"
+    },
+    {
+      "id": 3,
+      "student_id": 1,
+      "day": "Tuesday",
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "subject": "Machine Learning",
+      "room": "C-304",
+      "type": "class"
+    },
+    {
+      "id": 4,
+      "student_id": 1,
+      "day": "Wednesday",
+      "start_time": "14:00",
+      "end_time": "15:00",
+      "subject": "Operating Systems",
+      "room": "A-205",
+      "type": "class"
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "title": "Deadline Alert",
+      "message": "AI Assignment is due in 3 days. Start revision now.",
+      "type": "deadline"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "title": "Attendance Warning",
+      "message": "Your attendance is at 86%; maintain 85% to avoid issues.",
+      "type": "attendance"
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "title": "Holiday Update",
+      "message": "A college holiday has been announced. Your study plan was adjusted automatically.",
+      "type": "alert"
+    }
+  ],
+  "announcements": [
+    {
+      "id": 1,
+      "title": "Annual Exam Schedule Released",
+      "message": "Final exam timetable is now available in the student portal.",
+      "severity": "info"
+    },
+    {
+      "id": 2,
+      "title": "Rain Advisory",
+      "message": "Campus is open, but transport services are running with a 30 minute delay.",
+      "severity": "warning"
+    },
+    {
+      "id": 3,
+      "title": "Holiday Update",
+      "message": "The college remains closed on account of the state holiday announced by the district office.",
+      "severity": "urgent"
+    },
+    {
+      "id": 1,
+      "title": "Annual Exam Schedule Released",
+      "message": "Final exam timetable is now available in the student portal.",
+      "severity": "info"
+    },
+    {
+      "id": 2,
+      "title": "Rain Advisory",
+      "message": "Campus is open, but transport services are running with a 30 minute delay.",
+      "severity": "warning"
+    },
+    {
+      "id": 3,
+      "title": "Holiday Update",
+      "message": "The college remains closed on account of the state holiday announced by the district office.",
+      "severity": "urgent"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": 1793386603126,
+      "actor": "Aarav Sharma",
+      "action": "login",
+      "details": "User logged in as Student",
+      "created_at": "2026-10-30T18:56:43.126Z"
+    },
+    {
+      "id": 1793386456023,
+      "actor": "Aarav Sharma",
+      "action": "login",
+      "details": "User logged in as Student",
+      "created_at": "2026-10-30T18:54:16.023Z"
+    },
+    {
+      "id": 1793385824469,
+      "actor": "Aarav Sharma",
+      "action": "login",
+      "details": "User logged in as student",
+      "created_at": "2026-10-30T18:43:44.469Z"
+    },
+    {
+      "id": 1793385897233,
+      "actor": "Aarav Sharma",
+      "action": "login",
+      "details": "User logged in as student",
+      "created_at": "2026-10-30T18:44:57.233Z"
+    }
+  ],
+  "settings": [
+    {
+      "id": 1,
+      "key": "aiProvider",
+      "value": "local-rule-engine"
+    },
+    {
+      "id": 2,
+      "key": "studyHoursPerDay",
+      "value": "3"
+    },
+    {
+      "id": 3,
+      "key": "attendanceThreshold",
+      "value": "75"
+    },
+    {
+      "id": 4,
+      "key": "collegeName",
+      "value": "BluePeak Institute of Technology"
+    }
+  ]
+}
